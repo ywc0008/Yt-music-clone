@@ -6,7 +6,7 @@ import React, { useMemo } from "react";
 import { FiCompass, FiMusic, FiPlus } from "react-icons/fi";
 import { GoHome } from "react-icons/go";
 import { dummyPlaylistArray } from "@/lib/dummyData";
-import PlayList from "./playlistNav";
+import playlistNav from "./playlistNav";
 
 const Navigator = () => {
   const pathname = usePathname();
@@ -66,7 +66,9 @@ const Navigator = () => {
       <section>
         <ul className="flex flex-col">
           {dummyPlaylistArray.map((playlist) => {
-            return <PlayList key={playlist.id} playlist={playlist}></PlayList>;
+            return (
+              <playlistNav key={playlist.id} playlist={playlist}></playlistNav>
+            );
           })}
         </ul>
       </section>
