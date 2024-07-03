@@ -1,15 +1,17 @@
-import { sleep } from "@/lib/utils";
 import React from "react";
+import Category from "./components/Category";
+import PagePadding from "@/components/PagePadding";
 
 const page = async () => {
   return (
-    <div className="min-h-[600px]">
-      Homepage
-      <div className="h-[500px] bg-neutral-700">homepage</div>
-      <div className="h-[500px] bg-neutral-700">homepage</div>
-      <div className="h-[500px] bg-neutral-700">homepage</div>
-      <div className="h-[500px] bg-neutral-700">homepage</div>
-    </div>
+    <PagePadding>
+      <div className="min-h-[600px]">
+        <div className="mt-9"></div>
+        <Category />
+        <div className="mt-12"></div>
+        {/* carousel */}
+      </div>
+    </PagePadding>
   );
 };
 
