@@ -133,8 +133,8 @@ export const dummyPlaylistArray = [
   },
   {
     id: 5,
-    owner: "도도",
-    playlistName: "dodo's playlist music",
+    owner: "우창",
+    playlistName: "wzz's playlist music",
     songList: [
       ...getSongsBychannel("CattyBGM"),
       ...getSongsBychannel("ClearnEars"),
@@ -195,7 +195,7 @@ export const dummyChannelList = [
   {
     id: 5,
     subscribers: 3900,
-    name: "도도",
+    name: "우창",
     songList: [
       ...getSongsBychannel("50meru"),
       ...getSongsBychannel("CattyBGM"),
